@@ -24,3 +24,21 @@
     display: none;
 
 }
+
+.container_botao{
+    display: none;
+}
+
+.container_botao:checked~ .lista-menu{
+    display: block;
+}
+
+.lista-menu_titulo{
+    color: aqua;
+}
+
+.lista-menu_item{
+    background: var(--branco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: trasparent;
+}
