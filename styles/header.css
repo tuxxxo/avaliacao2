@@ -9,36 +9,51 @@
 
 .cabecalho{
     background-color: var(--branco);
-
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
+
 .container{
     display: flex;
     align-items: center;
+
 }
 .container__imagem{
     padding: 1em;
+
 }
 
 .lista-menu{
     display: none;
-
-}
-
-.container_botao{
-    display: none;
-}
-
-.container_botao:checked~ .lista-menu{
-    display: block;
-}
-
-.lista-menu_titulo{
-    color: aqua;
-}
-
-.lista-menu_item{
+    position: absolute;
+    top: 100%;
     background: var(--branco);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: trasparent;
+    width: 60vw;
+}
+
+.container__botao{
+  display: none;
+}
+
+.container__botao:checked~ .lista-menu{
+  display: block;
+}
+
+.Titulo_Li{
+  color: var(--amarelo);
+}
+
+.Item_Li{
+  background: var(--roxo-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.Titulo_Li, .Item_Li{
+  padding: 1em;
+  background-color: var(--branco)
 }
